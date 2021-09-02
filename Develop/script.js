@@ -168,11 +168,15 @@ function generatePassword() {
         return pass;
       }
     }
+
+    // Created an else statement to make sure that one of the prompts was true
     else {
       alert("You must say 'OK' to at lease one requirement for the password.");
       generatePassword();
     }
   }
+
+  // Created an else statement if the user input a number that was not between 8 and 128
   else {
     alert("Please choose a valid character amount between '8' and '128'.")
     generatePassword();
